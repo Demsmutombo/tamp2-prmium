@@ -123,6 +123,15 @@
                 Obsèques
               </router-link>
             </li>
+            <li>
+              <router-link 
+                to="/carte-commemorative" 
+                class="hover:theme-accent transition-colors"
+                :class="{ 'border-b-2 theme-border pb-1 font-medium theme-accent': $route.name === 'MemorialCard' }"
+              >
+                Carte
+              </router-link>
+            </li>
           </ul>
 
           <!-- Mobile Menu Button -->
