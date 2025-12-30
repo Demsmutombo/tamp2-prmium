@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --theme-bg: #000000;
+  --theme-surface: #000000;
+  --theme-text: #FFFFFF;
+  --theme-text-secondary: #D1D5DB;
+  --theme-accent: #FCD34D;
+  --theme-accent-hover: #FDE68A;
+  --theme-border: #FCD34D;
+  --theme-border-opacity: 0.3;
+}
+
+/* Classes utilitaires pour le thème */
+.theme-bg {
+  background-color: var(--theme-bg);
+}
+
+.theme-surface {
+  background-color: var(--theme-surface);
+}
+
+.theme-text {
+  color: var(--theme-text);
+}
+
+.theme-text-secondary {
+  color: var(--theme-text-secondary);
+}
+
+.theme-accent {
+  color: var(--theme-accent);
+}
+
+.theme-accent-hover:hover {
+  color: var(--theme-accent-hover);
+}
+
+.theme-border {
+  border-color: var(--theme-border);
+  border-color: rgba(var(--theme-border-rgb, 252, 211, 77), var(--theme-border-opacity, 0.3));
+}
+
+.theme-border-full {
+  border-color: var(--theme-border);
+}
+
+.hover\:theme-accent:hover {
+  color: var(--theme-accent);
+}
+
+.hover\:theme-accent-hover:hover {
+  color: var(--theme-accent-hover);
+}
+
+/* SVG avec couleurs de thème */
+.theme-svg-accent {
+  stroke: var(--theme-accent);
+  fill: var(--theme-accent);
+}
+
+.theme-svg-accent-light {
+  stroke: var(--theme-accent-hover);
+  fill: var(--theme-accent-hover);
+}
+
+/* Bouton de thème avec hover */
+.theme-button:hover {
+  background-color: var(--theme-accent) !important;
+  color: var(--theme-bg) !important;
+}
+
+/* Bouton avec bordure de thème */
+button.theme-button {
+  border-color: var(--theme-accent);
+  color: var(--theme-accent);
+}
+
+button.theme-button:hover {
+  background-color: var(--theme-accent);
+  color: var(--theme-bg);
+}
+
+/* Thème actif dans le sélecteur */
+.theme-active {
+  background-color: color-mix(in srgb, var(--theme-accent) 10%, transparent) !important;
+}
+
