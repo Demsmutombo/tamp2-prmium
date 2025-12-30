@@ -1,6 +1,7 @@
 {
   "name": "memorial-premium",
   "version": "1.0.0",
+  "type": "module",
   "description": "Mémorial digital Eleanor Vance",
   "scripts": {
     "dev": "vite",
@@ -8,7 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.0",
